@@ -21,7 +21,7 @@ A simple React application to browse, search and manage guitar chords.
 - Building interactive UI with filtering logic
 
 ## Live Demo
-
+https://guitar-chord-library-onur.netlify.app
 
 ## Installation
 ```bash
