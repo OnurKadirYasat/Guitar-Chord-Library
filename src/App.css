@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  color: rgb(62, 62, 62);
+}
+
+h1 {
+  color: rgb(109, 171, 207);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(109, 171, 207);
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: rgba(109, 171, 207, 0.1);
+  transition: 0.2s;
+}
+
+.search-bar button {
+  font-size: 14px;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.chord-card {
+  background: rgb(249, 242, 242);
+  border: 1px solid rgb(109, 171, 207);
+  border-radius: 12px;
+  padding: 16px;
+  transition: 0.2s;
+}
+
+.chord-card:hover {
+  transform: translateY(-4px);
+  border-color: rgb(60, 137, 181);
+}
+
+.chord-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.fretboard {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.string-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.string-name {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: rgb(62, 62, 62);
+}
+
+.frets {
+  width: 100%;
+  max-width: 32px;
+  height: 140px;
+  border: 1px solid rgb(170, 168, 168);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(249, 244, 244);
+  border-radius: 8px;
+}
+
+.finger {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgb(154, 167, 181);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finger.active {
+  background: rgb(109, 171, 207);
+  color: rgb(62, 62, 62);
+  font-weight: bold;
+}
